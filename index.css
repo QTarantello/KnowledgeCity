@@ -1,0 +1,92 @@
+.container {
+  font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 200px auto;
+}
+
+.header {
+  width: 500px;
+  height: 100px;
+}
+
+.body {
+  margin: 80px 0 0 25px;
+}
+
+.title {
+  font-size: 14pt;
+}
+
+.title-hint {
+  font-size: 11pt;
+}
+
+.log-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.login,
+.password {
+  width: 370px;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid grey;
+  outline: none;
+}
+
+.login {
+  background: url("./assets/user.svg") no-repeat 6px 4px;
+  background-size: auto 75%;
+}
+
+.password {
+  background: url("./assets/password.svg") no-repeat 6px 4px;
+  background-size: auto 75%;
+}
+
+.login-input,
+.password-input {
+  border: none;
+  outline: none;
+  height: 15px;
+  margin-left: 18px;
+  width: 270px;
+}
+
+.login::placeholder,
+.password::placeholder {
+  padding-left: 20px;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkbox-hint {
+  font-size: 11pt;
+}
+
+.submit {
+  margin-top: 30px;
+}
+
+.submit-button {
+  width: 400px;
+  padding: 9px;
+  border-radius: 20px;
+  padding-right: 340px;
+  color: white;
+  font-size: 11pt;
+  background-color: rgb(210, 146, 64);
+  border: 1px solid grey;
+  outline: none;
+  cursor: pointer;
+}
