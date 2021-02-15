@@ -3,9 +3,12 @@ const USER_CREDENTIALS = {
   password: "12345678",
 };
 
-const checkCredentials = ({ username, password }) =>
-  username.trim() === USER_CREDENTIALS.username &&
-  password === USER_CREDENTIALS.password;
+function checkCredentials({ username, password }) {
+  return (
+    username.trim() === USER_CREDENTIALS.username &&
+    password === USER_CREDENTIALS.password
+  );
+}
 
 const USERS = {
   1: {
@@ -37,10 +40,10 @@ const USERS = {
   },
 };
 
-const getUsersResponse = (offset = 1) => {
+function getUsersResponse(offset = 1) {
   if (offset in USERS) {
     return USERS[offset];
   } else {
     return USERS[0];
   }
-};
+}

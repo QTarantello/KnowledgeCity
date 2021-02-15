@@ -1,7 +1,9 @@
-const fetchWithDelay = (cb) => setTimeout(cb, 500);
+function fetchWithDelay(cb) {
+  setTimeout(cb, 500);
+}
 
-const fetch = (url, options) =>
-  new Promise((resolve, _reject) => {
+function fetch(url, options) {
+  return new Promise((resolve, _reject) => {
     const [path, query = ""] = url.split("?");
 
     switch (path) {
@@ -45,3 +47,4 @@ const fetch = (url, options) =>
         fetchWithDelay(() => resolve({ code: 404 }));
     }
   });
+}

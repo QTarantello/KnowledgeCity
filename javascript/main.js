@@ -43,7 +43,7 @@ function isAuthenticated() {
   }
 }
 
-const boot = () => {
+function boot() {
   switch (parseUrl()) {
     case "login.html":
       bootLoginPage();
@@ -56,6 +56,6 @@ const boot = () => {
       }
       break;
   }
-};
+}
 
 window.addEventListener("DOMContentLoaded", () => boot());

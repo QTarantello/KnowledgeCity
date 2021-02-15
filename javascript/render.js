@@ -126,6 +126,7 @@ const renderLogin = (function () {
     const usernameInput = document.createElement("input");
     usernameInput.setAttribute("class", "form__field form__field-username");
     usernameInput.setAttribute("placeholder", "Username");
+    usernameInput.setAttribute("type", "text");
     return usernameInput;
   }
 
@@ -133,6 +134,7 @@ const renderLogin = (function () {
     const passwordInput = document.createElement("input");
     passwordInput.setAttribute("class", "form__field form__field-password");
     passwordInput.setAttribute("placeholder", "Password");
+    passwordInput.setAttribute("type", "password");
     return passwordInput;
   }
 

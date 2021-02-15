@@ -28,12 +28,12 @@ body {
 }
 
 .title {
-  font-size: 14pt;
+  font-size: 19px;
   margin-top: 50px;
 }
 
 .title-hint {
-  font-size: 10pt;
+  font-size: 13px;
 }
 
 .form {
@@ -54,19 +54,19 @@ body {
 }
 
 .form__field-username {
-  background: url("../images/user.svg") no-repeat 6px 4px;
+  background: #fff url("../images/user.svg") no-repeat 6px 4px;
   background-size: auto 75%;
 }
 
 .form__field-password {
-  background: url("../images/password.svg") no-repeat 6px 4px;
+  background: #fff url("../images/password.svg") no-repeat 6px 4px;
   background-size: auto 75%;
 }
 
 .form__field-label {
   display: flex;
   align-items: center;
-  font-size: 11pt;
+  font-size: 15px;
   margin-top: 15px;
 }
 
@@ -79,7 +79,7 @@ body {
   border-radius: 20px;
   color: white;
   border: none;
-  font-size: 11pt;
+  font-size: 15px;
   background-color: rgb(233, 140, 59);
   outline: none;
   cursor: pointer;
@@ -144,13 +144,13 @@ h1[class="header-list__title"] {
 }
 
 .table-row-name {
-  background: url("../images/item-mark.png") no-repeat 90px 15px;
+  background: url("../images/item-mark.png") no-repeat 90px 22px;
   background-size: auto 30%;
-  padding: 20px 0 0 150px;
+  padding: 25px 0 0 150px;
 }
 
 .table-row-group__label {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .table-row-group {
@@ -159,7 +159,7 @@ h1[class="header-list__title"] {
 }
 
 .table-row-name__username {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .table-row-name__name {
@@ -199,12 +199,16 @@ h1[class="header-list__title"] {
   background-color: #ebebeb;
 }
 
-#log-out-button {
-  background: url("../images/exit-logo.png") no-repeat 0 0;
+.footer__button {
+  background: url("../images/exit-icon.png") no-repeat 0 0;
   background-size: auto 80%;
   width: 100px;
   border: none;
   cursor: pointer;
-  font-size: 12pt;
+  font-size: 16px;
   outline: none;
+}
+
+.footer__button:hover {
+  text-decoration: underline;
 }
