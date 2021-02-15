@@ -73,9 +73,9 @@ body {
 .form__button {
   background: url("../images/right.png") no-repeat 388px 4px;
   background-size: auto 75%;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 420px;
-  padding: 9px 363px 9px 9px;
+  padding: 10px 363px 10px 10px;
   border-radius: 20px;
   color: white;
   border: none;
