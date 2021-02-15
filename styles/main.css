@@ -103,6 +103,15 @@ body {
   width: 100%;
 }
 
+.header-list-container {
+  display: flex;
+  justify-items: center;
+}
+
+h1[class="header-list__title"] {
+  text-align: center;
+}
+
 .table {
   border-top: 15px solid rgb(233, 140, 59);
   display: table;
