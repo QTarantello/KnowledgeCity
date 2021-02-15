@@ -122,34 +122,46 @@ const renderLogin = (function () {
     return form;
   }
 
-  function renderUsernameInput() {
-    const usernameInput = document.createElement("input");
-    usernameInput.setAttribute("class", "form__field form__field-username");
-    usernameInput.setAttribute("placeholder", "Username");
-    usernameInput.setAttribute("type", "text");
-    return usernameInput;
+  function renderUsernameField() {
+    const field = document.createElement("div");
+    field.setAttribute("class", "form-field form-field-username");
+
+    const input = document.createElement("input");
+    input.setAttribute("class", "form-field__input");
+    input.setAttribute("placeholder", "Username");
+    input.setAttribute("type", "text");
+
+    field.appendChild(input);
+
+    return [field, input];
   }
 
-  function renderPasswordInput() {
-    const passwordInput = document.createElement("input");
-    passwordInput.setAttribute("class", "form__field form__field-password");
-    passwordInput.setAttribute("placeholder", "Password");
-    passwordInput.setAttribute("type", "password");
-    return passwordInput;
+  function renderPasswordField() {
+    const field = document.createElement("div");
+    field.setAttribute("class", "form-field form-field-password");
+
+    const input = document.createElement("input");
+    input.setAttribute("class", "form-field__input");
+    input.setAttribute("placeholder", "Password");
+    input.setAttribute("type", "password");
+
+    field.appendChild(input);
+
+    return [field, input];
   }
 
-  function renderRememberMeInput() {
-    const rememberMeBlock = document.createElement("label");
-    rememberMeBlock.setAttribute("class", "form__field form__field-label");
+  function renderRememberMeField() {
+    const field = document.createElement("label");
+    field.setAttribute("class", "form-field form-field-label");
 
-    const rememberMeCheckbox = document.createElement("input");
-    rememberMeCheckbox.setAttribute("type", "checkbox");
+    const checkbox = document.createElement("input");
+    checkbox.setAttribute("type", "checkbox");
 
-    const rememberMeText = document.createTextNode("Remember me");
+    const text = document.createTextNode("Remember me");
 
-    appendChilds(rememberMeBlock, [rememberMeCheckbox, rememberMeText]);
+    appendChilds(field, [checkbox, text]);
 
-    return [rememberMeBlock, rememberMeCheckbox];
+    return [field, checkbox];
   }
 
   function renderSubmitButton() {
@@ -185,15 +197,15 @@ const renderLogin = (function () {
       } else {
         const form = renderForm();
 
-        const usernameInput = renderUsernameInput();
-        const passwordInput = renderPasswordInput();
-        const [rememberMeBlock, rememberMeCheckbox] = renderRememberMeInput();
+        const [usernameField, usernameInput] = renderUsernameField();
+        const [passwordField, passwordInput] = renderPasswordField();
+        const [rememberMeField, rememberMeCheckbox] = renderRememberMeField();
         const submitButton = renderSubmitButton();
 
         appendChilds(form, [
-          usernameInput,
-          passwordInput,
-          rememberMeBlock,
+          usernameField,
+          passwordField,
+          rememberMeField,
           submitButton,
         ]);
 

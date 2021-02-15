@@ -1,5 +1,5 @@
 function fetchWithDelay(cb) {
-  setTimeout(cb, 500);
+  setTimeout(cb, 300);
 }
 
 function fetch(url, options) {
