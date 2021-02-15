@@ -5,20 +5,20 @@ body {
 }
 
 .container {
+  margin: 0 auto;
   min-height: 100%;
   background-color: #f6f6f6;
 }
 
 .content {
-  width: 800px;
+  width: 750px;
   max-width: 90%;
-  min-height: calc(100vh - 50px);
-  margin: 10px auto;
+  margin: 0 auto;
 }
 
 .header {
-  padding: 20px;
-  width: 500px;
+  padding: 25px;
+  width: 450px;
   margin: 0 auto;
 }
 
@@ -71,24 +71,33 @@ body {
 }
 
 .form__button {
-  background: url("../images/right.png") no-repeat 383px 4px;
+  background: url("../images/right.png") no-repeat 388px 4px;
   background-size: auto 75%;
   margin-top: 30px;
   width: 420px;
-  padding: 9px 360px 9px 9px;
+  padding: 9px 363px 9px 9px;
   border-radius: 20px;
   color: white;
+  border: none;
   font-size: 11pt;
   background-color: rgb(233, 140, 59);
-  border: 1px solid grey;
   outline: none;
   cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form__button:hover {
+  background-color: rgb(202, 112, 34);
+}
+
+.form__button:active {
+  background-color: rgb(192, 178, 167);
 }
 
 .content-list {
   width: 1200px;
   max-width: 90%;
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 60px);
   margin: 0 auto;
 }
 
@@ -197,4 +206,5 @@ h1[class="header-list__title"] {
   border: none;
   cursor: pointer;
   font-size: 12pt;
+  outline: none;
 }
