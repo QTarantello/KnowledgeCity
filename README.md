@@ -1,7 +1,7 @@
 # KnowledgeCity (test task)
 
-В проекте для эмуляции работы сервера я написал функцию fetch, которая в зависимости от url и параметров возвращает промис с результатом. Данные об авторизации пользователя хранятся в localStorage. Поскольку в проекте не использовался сборщик, я разделил его на отдельные файлы, каждый из которых также подключается отдельно. Хорошим решением было бы использовать модули, но в таком случае потребовался бы сервер, раздающий статику. Тем не менее, учитывая относительную простоту проекта, разделение на файлы выглядит хорошим решением.
+The project is a test task at the KnowledgeCity company for a Frontend Developer position. I had a following requirements: to create a simple login system and a page with users table without using any frameworks or bundlers. I created my own fetch function for server emulation and its results depend on url and entered params. Authorization data is stored in LocalStorage. Because of I have not used bundler and JS-modules, I have splitted the project into separate files. Actually It's not good practice, but for this project, it was enough.  
 
-### Данные для входа:
-* логин - qtarantello
-* пароль - 12345678
+### Login parameters:
+* login name - qtarantello
+* password - 12345678
