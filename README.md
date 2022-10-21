@@ -1,6 +1,6 @@
 # KnowledgeCity (test task)
 
-The project is a test task at the KnowledgeCity company for a Frontend Developer position. I have had a following requirements: to create a simple login system and a page with users table without using any frameworks or bundlers. I created my own fetch function for server emulation and its results depend on url and entered params. Authorization data is stored in LocalStorage. Because of I have not used bundler and JS-modules, I have splitted the project into separate files. Actually It's not good practice, but for this project, it was enough.  
+The project is a test task at the KnowledgeCity company for a Frontend Developer position. I have had a following requirements: to create a simple login system and a page with users table without using any frameworks or bundlers. I have created my own fetch function for server emulation and its results depend on url and entered params. Authorization data is stored in LocalStorage. Because of I have not used bundler and JS-modules, I have splitted the project into separate files. Actually It's not good practice, but for this project, it was enough.  
 
 ### Login parameters:
 * login name - qtarantello
