@@ -4,8 +4,8 @@ The project is a test task at the KnowledgeCity company for a Frontend Developer
 
 ## Project launch
 1. clone repository;
-2. open login.html file
-3. enter credentials (see below)
+2. open login.html file;
+3. enter credentials (see below).
 
 ### Login parameters:
 * login name - qtarantello
